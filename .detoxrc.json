@@ -1,0 +1,14 @@
+{
+  "test-runner": "jest",
+  "runner-config": "e2e/init.js",
+  "configurations": {
+    "ios.simulator": {
+      "binaryPath": "path/to/your/app",
+      "build": "xcodebuild -project ios/YourApp.xcodeproj -scheme YourApp -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
+      "type": "ios.simulator",
+      "device": {
+        "type": "iPhone 11"
+      }
+    }
+  }
+}
